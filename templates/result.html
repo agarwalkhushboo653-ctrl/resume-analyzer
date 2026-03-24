@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        </head>
+        <body>
+
+        <h1>📊 Analysis Result</h1>
+
+        <h2>Skills Found</h2>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+                    {% endfor %}
+                    </ul>
+
+                    <h2>🚀 Career Suggestion</h2>
+                    <p>{{ career }}</p>
+
+                    <h2>📈 Improvement Tips</h2>
+                    <ul>
+                        {% for tip in tips %}
+                            <li>{{ tip }}</li>
+                                {% endfor %}
+                                </ul>
+
+                                <a href="/" style="color:#38bdf8;">⬅ Back</a>
+
+                                </body>
+                                </html>
